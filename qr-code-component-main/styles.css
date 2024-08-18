@@ -1,13 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Seymour+One&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
 }
 
 .mainContainer{
     height:100vh;
     width: 100%;
-    background: #e7f8fd;
+    background: #D6E1F0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,21 +20,21 @@
 .qrContainer{
     align-items: center; 
     background-color: #ffffff;
-    border-radius: 20px;
-    box-shadow: 0px 0px 30px 10px #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 10px #D2E0ED;
     display: flex;
     height: 500px;
     width: 300px;    
     flex-direction: column;
-    padding:12px;
+    padding:10px;
     text-align: center;
-    gap: 2rem; 
+    gap: 1.5rem; 
     margin-bottom: 20px;  
 }
 .qrCode{
     height: 62%;
     width: 100%;
-    border-radius: 20px;
+    border-radius: 5px;
 }
 .infoContainer{
     height:50px;
@@ -43,11 +46,102 @@
 }
 .infoContainer h1{
     width: 90%;
-    font-size: 22px;
+    font-size: 20px;
+    font-weight: 700;
 } 
 .infoContainer p{
     width: 90%;
     font-size: 15px;
+    font-weight: 400;
     color: grey;   
+}
+
+@media only screen and (min-device-width: 375px) {
+    .qrContainer{
+        height: 300px;
+        width: 200px;
+        gap: 1rem;
+    }
+    .infoContainer{
+        gap: 0.5em;
+    }
+    .infoContainer h1{
+        width: 90%;
+        font-size: 12px;
+        font-weight: 700;
+    } 
+    .infoContainer p{
+        width: 90%;
+        font-size: 9px;
+        font-weight: 400;
+          
+    }
+}
+@media only screen and (max-width: 425px) {
+    .qrContainer{
+        height: 305px;
+        width: 250px;
+        gap: 1rem;
+    }
+    .infoContainer{
+        gap: 0.5em;
+    }
+    .infoContainer h1{
+        width: 90%;
+        font-size: 18px;
+        font-weight: 700;
+    } 
+    .infoContainer p{
+        width: 90%;
+        font-size: 9px;
+        font-weight: 400;
+          
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    .qrContainer{
+        height: 300px;
+        width: 200px;
+        gap: 1rem;
+    }
+    .infoContainer{
+        gap: 0.5em;
+    }
+    .infoContainer h1{
+        width: 90%;
+        font-size: 12px;
+        font-weight: 700;
+    } 
+    .infoContainer p{
+        width: 90%;
+        font-size: 9px;
+        font-weight: 400;
+          
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .qrContainer{
+        height: 300px;
+        width: 200px;
+        gap: 1rem;
+    }
+    .infoContainer{
+        gap: 0.5em;
+    }
+    .infoContainer h1{
+        width: 90%;
+        font-size: 12px;
+        font-weight: 700;
+    } 
+    .infoContainer p{
+        width: 90%;
+        font-size: 9px;
+        font-weight: 400;
+          
+    }
 }
 
